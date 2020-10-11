@@ -1,0 +1,163 @@
+{
+  "logo": {
+    "src": "logo.png",
+    "link": "?index.html",
+    "name": "网城软件·网城智造"
+  },
+  "company": {
+    "cnName": "保定网城软件有限公司·网城智造",
+    "enName": "Baoding NetCity Software Co.,Ltd",
+    "address": "中国·河北·保定市恒源西路888号3S双创社区316室",
+    "serviceTel": "18631203188",
+    "eMail": "bdasp@126.com",
+    "icpNumber": "冀ICP备06025637号",
+    "icpLink": "https://beian.miit.gov.cn/"
+  },
+  "nav": [
+    {
+      "icon": "home",
+      "title": "首页",
+      "caption": "Home",
+      "url": "javascript:void(0)",
+      "subNav": []
+    },
+    {
+      "icon": "comment",
+      "title": "资讯",
+      "caption": "Information",
+      "url": "javascript:void(0)",
+      "subNav": []
+    },
+    {
+      "icon": "dvr",
+      "title": "关于",
+      "caption": "Brief",
+      "url": "javascript:void(0)",
+      "subNav": []
+    },
+    {
+      "icon": "developer_board",
+      "title": "产品",
+      "caption": "Products",
+      "url": "",
+      "subNav": [
+        {
+          "subTitle": "网城精益生产管理系统",
+          "subUrl": "javascript:void(0)",
+          "icon": "donut_small"
+        },
+        {
+          "subTitle": "网城生产数据检测系统",
+          "subUrl": "javascript:void(0)",
+          "icon": "settings_input_component"
+        },
+        {
+          "subTitle": "网城物流执行系统",
+          "subUrl": "javascript:void(0)",
+          "icon": "local_shipping"
+        },
+        {
+          "subTitle": "网城智能仓储管理系统",
+          "subUrl": "javascript:void(0)",
+          "icon": "view_module"
+        },
+        {
+          "subTitle": "安灯报警系统",
+          "subUrl": "javascript:void(0)",
+          "icon": "error_outline"
+        }
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "title": "定制化开发",
+      "caption": "Custom Dev",
+      "url": "",
+      "subNav": [
+        {
+          "subTitle": "APP定制化开发",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "Web定制化开发",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "桌面软件定制化开发",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "小程序定制化开发",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "icon": "laptop",
+      "title": "解决方案",
+      "caption": "Solution",
+      "url": "",
+      "subNav": [
+        {
+          "subTitle": "零部件智能制造",
+          "subUrl": "javascript:void(0)",
+          "icon": "memory"
+        },
+        {
+          "subTitle": "JIT物流执行解决方案",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "整车生产智造",
+          "subUrl": "javascript:void(0)",
+          "icon": "directions_car"
+        },
+        {
+          "subTitle": "汽车制造",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "icon": "local_activity",
+      "title": "服务",
+      "caption": "Service",
+      "url": "",
+      "subNav": [
+        {
+          "subTitle": "项目外包",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "设备集成及自动化",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "云服务器及网站托管",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        },
+        {
+          "subTitle": "弱电安装及施工",
+          "subUrl": "javascript:void(0)",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "icon": "place",
+      "title": "联系",
+      "caption": "Contact",
+      "url": "javascript:void(0)",
+      "subNav": []
+    }
+  ]
+}
