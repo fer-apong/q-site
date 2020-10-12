@@ -43,6 +43,13 @@ export default {
       }).catch((err) => {
         console.log(err)
       })
+
+      // quasar 自带的ajax方法
+      // this.$axios.get('http://api.btstu.cn/yan/api.php?charset=utf-8&encode=json').then((result) => {
+      //   console.log(result)
+      // }).catch((err) => {
+      //   console.log(err)
+      // })
     }
   },
   mounted () {

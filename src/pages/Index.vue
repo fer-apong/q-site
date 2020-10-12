@@ -70,7 +70,7 @@
 </template>
 
 <script>
-
+import { remoteRequest } from 'boot/axios'
 
 export default {
   name: 'PageIndex',
@@ -79,6 +79,21 @@ export default {
       slide: 'style',
       lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.'
     }
+  },
+  methods: {
+    getRemoteData () {
+      const params = {
+        userId: '1'
+      }
+      remoteRequest('posts', params).then((result) => {
+        console.log(result.data)
+      }).catch((err) => {
+        console.log(err)
+      })
+    }
+  },
+  mounted () {
+    this.getRemoteData()
   }
 }
 </script>
