@@ -40,6 +40,7 @@ export default {
       jsonRequest('/api/global.json').then((result) => {
         this.globalDataLogo = result.logo
         this.globalDataNav = result.nav
+        console.log(result)
       }).catch((err) => {
         console.log(err)
       })

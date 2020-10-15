@@ -12,6 +12,7 @@ export function jsonRequest (config) {
   })
 
   jsonData.interceptors.request.use(config => {
+    // console.log(config)
     return config
   }, err => {
     console.log(err)
@@ -26,28 +27,29 @@ export function jsonRequest (config) {
   return jsonData(config)
 }
 
-// 获取远程网站信息API-POST
+// 获取远程网站信息API
 
-export function remoteRequest (url, params = {}, config) {
+export function remoteRequest (config) {
   // 创建实例
   const remoteData = axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com',
-    timeout: 5000,
-    headers: { 'content-type': 'application/x-www-form-urlencoded' }
+    baseURL: 'http://123.207.32.32:8000',
+    timeout: 5000
+    // headers: { 'content-type': 'application/x-www-form-urlencoded' }
   })
 
   remoteData.interceptors.request.use(config => {
-    console.log(config)
+    // console.log(config)
     return config
   }, err => {
     console.log(err)
   })
 
-  remoteData.post(url, params).then((result) => {
+  remoteData.interceptors.response.use(result => {
+    console.log(result.data)
     return result.data
-  }).catch((err) => {
+  }, err => {
     console.log(err)
   })
 
-  return remoteData(url, params, config)
+  return remoteData(config)
 }
