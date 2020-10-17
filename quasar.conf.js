@@ -6,7 +6,7 @@
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
-
+const path = require('path')
 module.exports = function (/* ctx */) {
   return {
     // https://quasar.dev/quasar-cli/supporting-ts
@@ -46,7 +46,6 @@ module.exports = function (/* ctx */) {
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'history', // available values: 'hash', 'history'
-
       // transpile: false,
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
@@ -62,8 +61,6 @@ module.exports = function (/* ctx */) {
 
       // Options below are automatically set depending on the env, set them if you want to override
       // extractCSS: false,
-
-
       // https://quasar.dev/quasar-cli/handling-webpack
       extendWebpack (cfg) {
         cfg.module.rules.push({
@@ -72,6 +69,13 @@ module.exports = function (/* ctx */) {
           loader: 'eslint-loader',
           exclude: /node_modules/
         })
+        cfg.resolve.alias = {
+          ...cfg.resolve.alias, // This adds the existing alias
+
+          // Add your own alias like this
+          'statics': path.resolve(__dirname, './src/statics'),
+          'network': path.resolve(__dirname, './src/network'),
+        }
       }
     },
 
@@ -79,7 +83,16 @@ module.exports = function (/* ctx */) {
     devServer: {
       https: false,
       port: 8081,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
+      // proxy: {
+      //   '/q-site': {
+      //     target: 'https://easy-mock.com/mock/5f8a820a4dc90c6644515182/q-site', //API服务器的地址
+      //     changeOrigin: true,
+      //     pathRewrite: {
+      //       '^/q-site': ''
+      //     }
+      //   }
+      // },
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework

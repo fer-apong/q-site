@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { getHomeData } from '../network/api'
+import { getHomeData } from 'network/api'
 
 export default {
   name: 'PageIndex',
@@ -35,8 +35,8 @@ export default {
   methods: {
     getRemoteData () {
       getHomeData().then(result => {
-        this.dataHomeBanner = result.data.banner.list
-        console.log(this.dataHomeBanner)
+        // this.dataHomeBanner = result.data.banner.list
+        console.log(result)
       }).catch(err => {
         console.log(err)
       })

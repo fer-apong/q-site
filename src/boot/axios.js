@@ -8,6 +8,7 @@ export function jsonRequest (config) {
   // 创建实例
   const jsonData = axios.create({
     baseURL: process.env.API,
+    // baseURL: '/statics',
     timeout: 5000
   })
 
