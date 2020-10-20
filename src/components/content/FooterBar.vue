@@ -1,7 +1,7 @@
 <template>
   <q-footer class="bg-primary">
     <div class="row">
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
         <Logo :logoName="globalDataLogo.name" />
         <p class="q-pl-lg q-mb-none">{{globalDataCompany.cnName}}</p>
         <p class="q-pl-lg q-mb-sm text-xs text-weight-thin text-blue-4">{{globalDataCompany.enName}}</p>

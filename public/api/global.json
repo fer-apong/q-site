@@ -159,5 +159,31 @@
       "url": "javascript:void(0)",
       "subNav": []
     }
+  ],
+  "banner": [
+    {
+      "id": 1,
+      "src": "images/home/carousel-01.jpg"
+    },
+    {
+      "id": 2,
+      "src": "images/home/carousel-02.jpg"
+    },
+    {
+      "id": 3,
+      "src": "images/home/carousel-03.jpg"
+    },
+    {
+      "id": 4,
+      "src": "images/home/carousel-04.jpg"
+    }
+  ],
+  "feature": [
+    {
+      "id": 1,
+      "icon": "brightness_high",
+      "title": "精益生产",
+      "text": "制造设备数控化 / 作业流程智能化 / 行业管理信息化"
+    }
   ]
 }

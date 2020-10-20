@@ -33,7 +33,8 @@ export function jsonRequest (config) {
 export function remoteRequest (config) {
   // 创建实例
   const remoteData = axios.create({
-    baseURL: 'http://123.207.32.32:8000',
+    // baseURL: 'http://123.207.32.32:8000',
+    baseURL: 'http://127.0.0.1:4523/mock/361712',
     timeout: 5000
     // headers: { 'content-type': 'application/x-www-form-urlencoded' }
   })
